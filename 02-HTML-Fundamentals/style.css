@@ -1,0 +1,263 @@
+* /* universal selector*/ {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+	font-family: sans-serif;
+	color: black;
+}
+
+h1,
+h2,
+h3 {
+	color: rgb(234, 151, 123);
+}
+
+h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+ul,
+ol {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 22px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+/* footer p{
+    font-size: 16px;
+} */
+
+/*header p{
+    font-style: italic;
+}*/
+.container {
+	width: 1200px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin: 0 auto;
+}
+body {
+	border-top: 10px solid #ea977b;
+	font-family: sans-serif;
+	position: relative;
+}
+
+.initial-header {
+	background-color: #f7f7f7;
+	padding: 10px;
+	margin-bottom: 40px;
+	/* height: 80px; */
+}
+
+.post-header {
+	margin-bottom: 30px;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border: 5px solid #ea977b;
+	padding: 50px 40px;
+	width: 500px;
+}
+
+article {
+	margin-bottom: 60px;
+}
+#author {
+	font-style: italic;
+	font-size: 15px;
+}
+
+#copyright {
+	font-size: 16px;
+}
+
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.related-list {
+	list-style: none;
+}
+
+a:link {
+	color: #ea977b;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ea977b;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: #776d6d;
+	font-style: italic;
+}
+
+.html_image {
+	width: 100%;
+	height: auto;
+}
+nav a:link {
+	margin-right: 20px;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.like {
+	cursor: pointer;
+	font-size: 16px;
+	padding: 20px;
+
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+/* h1::first-letter {
+	font-style: italic;
+	margin-right: 10px;
+} */
+
+h2::before {
+	content: "Osa";
+	background-color: beige;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -10px;
+	right: -25px;
+}
+
+h2:hover:before {
+	content: "Designed By Osa";
+	background-color: #ea977b;
+	color: beige;
+	font-size: 20px;
+	font-weight: bold;
+	top: -10px;
+	right: -25px;
+}
+h2 {
+	position: relative;
+}
+/* 
+PSEUDO-ELEMENTS
+h3 + p::first-line {
+	color: red;
+}
+h2 {
+	position: relative;
+}
+h2::after {
+	content: "Osa";
+	background-color: beige;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15;
+	right: -25px;
+} */
+/* 
+
+Types of blocks
+	nav a:link {
+	background-color: grey;
+	margin: 20px;
+	padding: 20px;
+	display: block or inline;
+} */
+/*Link Visited Hover Active in that order*/
+
+/*
+1. Declaration marked !important
+2. Inline style(style attribute HTML
+3. ID(#) Selector
+4. Class(.) or pseudo-class(:)  selector
+5. Element selector (p,div,liv,etc)
+6. Universal Selector(*)
+
+Highest priority being one and lowest being 6
+*/
+
+/* FLOAT */
+
+.author-img {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.author {
+	/* padding-left: 80px; */
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+h1 {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear-fix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+article {
+}
+aside {
+}
